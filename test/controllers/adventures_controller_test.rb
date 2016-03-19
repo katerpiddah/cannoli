@@ -18,7 +18,7 @@ class AdventuresControllerTest < ActionController::TestCase
 
   test "should create adventure" do
     assert_difference('Adventure.count') do
-      post :create, adventure: { name: @adventure.name }
+      post :create, adventure: { description: @adventure.description, name: @adventure.name, picture: @adventure.picture, visit: @adventure.visit }
     end
 
     assert_redirected_to adventure_path(assigns(:adventure))
@@ -35,7 +35,7 @@ class AdventuresControllerTest < ActionController::TestCase
   end
 
   test "should update adventure" do
-    patch :update, id: @adventure, adventure: { name: @adventure.name }
+    patch :update, id: @adventure, adventure: { description: @adventure.description, name: @adventure.name, picture: @adventure.picture, visit: @adventure.visit }
     assert_redirected_to adventure_path(assigns(:adventure))
   end
 

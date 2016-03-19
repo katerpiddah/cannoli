@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @railsgirl.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @railsgirl.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @railsgirl.picture %>
+</p>
+
+<p>
+  <strong>Visit:</strong>
+  <%= @railsgirl.visit %>
+</p>
+
+<%= link_to 'Edit', edit_railsgirl_path(@railsgirl) %> |
+<%= link_to 'Back', railsgirls_path %>
