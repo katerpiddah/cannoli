@@ -12,7 +12,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @railsgirl.picture %>
+  <%= image_tag(@railsgirl.picture_url, :width => 600) if @adventure.picture.present? %>
 </p>
 
 <p>
